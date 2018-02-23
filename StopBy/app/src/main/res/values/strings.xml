@@ -1,11 +1,22 @@
 <resources>
     <string name="app_name">StopBy</string>
-    <string name="username">Username</string>
-    <string name="password">Password</string>
-    <string name="login">Login</string>
-    <string name="search">Search</string>
+    <string name="usernameField">Username</string>
+    <string name="passwordField">Password</string>
+    <string name="loginButton">Login</string>
+    <string name="app_image_content_description">Main Logo</string>
+
+    <string name="toPostButton">Post</string>
+    <string name="toSearchButton">Search</string>
+    <string name="toProfileButton">Profile</string>
+    <string name="toSettings">Settings</string>
+
+    <string name="hangoutButton">Hangout</string>
+    <string name="studyButton">Study</string>
+    <string name="timeField">Time</string>
+    <string name="placeField">Place</string>
+    <string name="postButton">Post</string>
+
     <string name="title_activity_maps">Map</string>
-    <string name="post">Post</string>
-    <string name="settings">Settings</string>
-    <string name="Profile">Profile</string>
+
+
 </resources>

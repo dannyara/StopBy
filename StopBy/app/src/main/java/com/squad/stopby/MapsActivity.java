@@ -29,21 +29,21 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
     public void onMapReady(GoogleMap googleMap) {
         mMap = googleMap;
 
+        //retrieve informaton sent from the Post class
+        Bundle extras = getIntent().getExtras();
+
         //Set map to open up to UB
         LatLng buff = new LatLng(42.9993289, -78.7819876);
         mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(buff, 14));
 
-
-
-
         mMap.addMarker(new MarkerOptions().position(new LatLng(43.000710, -78.793274))
-                .title("User1").snippet("Wants to study in Capen").icon
+                .title("User1").snippet(extras.getString("event") + " " + extras.getString("time") + " " + extras.getString("place")).icon
                         (BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
         mMap.addMarker(new MarkerOptions().position(new LatLng(43.000271,-78.784563))
-                .title("User2").snippet("x").icon
+                .title("User2").snippet("Study 3pm Baldy Hall").icon
                         (BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
         mMap.addMarker(new MarkerOptions().position(new LatLng(43.002907,-78.788082))
-                .title("User3").snippet("y").icon
+                .title("User3").snippet("hangout 7pm my house").icon
                         (BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_CYAN)));
 
 
